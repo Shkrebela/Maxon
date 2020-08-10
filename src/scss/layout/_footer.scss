@@ -1,0 +1,20 @@
+.footer {
+/*   background-color: ; */
+  padding: 0;
+
+  &__container {
+    @include flex(space-around, flex-start);
+    flex-wrap: wrap;
+  }
+
+  &__box {
+    max-width: 200px;
+    width: 100%;
+    min-width: 100px;
+    flex: 1 1 100px;
+    margin-bottom: 0;
+  }
+
+  &__description {
+  }
+}

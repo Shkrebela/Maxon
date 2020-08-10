@@ -1,0 +1,31 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+
+    @font-face {
+        font-family: $font_name;
+        font-display: swap;
+        src: url("../../fonts/#{$file_name}.woff") format("woff"), url("../../fonts/#{$file_name}.woff2") format("woff2");
+        font-weight: #{$weight};
+        font-style: #{$style};
+    }
+}
+
+@mixin flex($row, $column) {
+  display: flex;
+  justify-content: $row;
+  align-items: $column;
+}
+
+@mixin media($parameter, $value-1, $value-2, $value-3, $value-4) {
+  @media (max-width: $media-xl) {
+    #{$parameter}: $value-1
+  }
+  @media (max-width: $media-lg) {
+    #{$parameter}: $value-2
+  }
+  @media (max-width: $media-md) {
+    #{$parameter}: $value-3
+  }
+  @media (max-width: $media-sm) {
+    #{$parameter}: $value-4
+  }
+}

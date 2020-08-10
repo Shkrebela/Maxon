@@ -1,0 +1,37 @@
+html,
+body {
+  font: $font-primary;
+  @media (max-width: $media-xl) {
+    font-size: 14px;
+  }
+  @media (max-width: $media-md) {
+    font-size: 12px;
+  }
+}
+
+p, span {
+  color: $text-color--;
+  margin-bottom: rem();
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family--;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: rem();
+  @include media(font-size, rem(), rem(), rem(), rem())
+}
+
+h3 {
+  font-size: rem();
+}
+
+h4 {
+  font-size: rem();
+}
+
+h5 {
+  font-size: rem();
+}

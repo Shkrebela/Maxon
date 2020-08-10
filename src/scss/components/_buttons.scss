@@ -1,0 +1,130 @@
+.menu-toggle {
+  $this: &;
+  display: none;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  padding: 15px 5px;
+  z-index: 150;
+  @media (max-width: $media-lg) {
+    display: block;
+  }
+
+  &--active-menu-toggle {
+    #{$this}__line {
+      width: 0;
+      background-color: $primary-color;
+
+      &::before {
+        top: 0;
+        left: 0;
+        transform: rotate(-45deg);
+      }
+
+      &::after {
+        top: 0;
+        left: 0;
+        transform: rotate(45deg);
+      }
+    }
+  }
+
+  &__line {
+    position: relative;
+    display: block;
+    width: 25px;
+    height: 2px;
+    background-color: white;
+    transition: 0s;
+
+    &::before, &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 25px;
+      height: 2px;
+      background-color: inherit;
+      transition: all .3s ease-in-out;
+    }
+
+    &::before {
+      top: -8px
+    }
+
+    &::after {
+      top: 8px
+    }
+  }
+}
+
+.button {
+  @include flex(center, center);
+  width: rem(228px);
+  padding: 15px 5px;
+  border: 1px solid white;
+  margin: 0 15px 15px;
+  border-radius: 3px;
+  background-color: transparentize(white, 0.7);
+  box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
+  font-size: 1.12rem;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background-color: transparentize(black, 0.3);
+    border: 1px solid transparentize(black, 0.3);
+  }
+
+  &--color {
+    width: rem(200px);
+    padding: 7px 5px;
+    border: 1px solid $menu-color;
+    background-color: $menu-color;
+    text-transform: capitalize;
+    font: $font-fourth;
+    margin: 10px 0 0;
+
+    &:hover {
+      background-color: $primary-color--hover;
+      border: 1px solid $primary-color--hover;
+    }
+  }
+}
+
+.arrow-up {
+  width: 53px;
+  height: 53px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+  background-color: $primary-color;
+  border-radius: 100%;
+  z-index: 10;
+  transition: .3s ease-in-out;
+
+  &:hover {
+    background-color: $primary-color--hover;
+  }
+
+  &__link {
+    @include flex(center, center);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__icon {
+    width: 17px;
+    height: 25px;
+    fill: white;
+  }
+
+  &--flow {
+    position: fixed;
+    right: 53px;
+    bottom: 60px;
+    @media (max-width: $media-md) {
+      right: 33px;
+      bottom: 30px;
+    }
+  }
+}

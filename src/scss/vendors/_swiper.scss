@@ -1,0 +1,51 @@
+@import '~swiper/swiper-bundle.min.css';
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.swiper-slide {
+  text-align: center;
+  background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-pagination {
+  @include flex(center, center);
+
+  .swiper-pagination-bullet {
+    background-color: transparent;
+    width: 30px;
+    height: 30px;
+    @include flex(center, center);
+
+    &::after {
+      content: "";
+      display: block;
+      width: 15px;
+      height: 15px;
+      background-color: transparentize(white, 0.5);
+    }
+  }
+
+  .swiper-pagination-bullet-active {
+
+    &::after {
+      background-color: transparentize($primary-color, 0.5);
+    }
+  }
+}

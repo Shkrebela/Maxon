@@ -1,0 +1,48 @@
+.main-header {
+ 
+  }
+
+  &__social-box {
+  }
+
+  &__menu {
+    
+    transition: left .3s ease-in-out;
+
+    @media (max-width: $media-lg) {
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 250px;
+      height: 100vh;
+      position: absolute;
+      top: 0;
+      padding: 0;
+      left: -200%;
+/*       background-color: ; */
+      #{$this}__link {
+/*         padding: rem() rem(); */
+      }
+    }
+
+    &--active-menu-toggle {
+      left: 0;
+    }
+  }
+
+  &__link {
+    @include flex(center, center);
+    position: relative;
+/*     font: $font-; */
+/*     font-size: ; */
+/*     color: $text-color--; */
+    white-space: nowrap;
+/*     padding: rem() rem(); */
+    transition: .3s ease-in-out;
+
+    &:hover {
+      @media (max-width: $media-md) {
+        
+      }
+    }
+  }
+}

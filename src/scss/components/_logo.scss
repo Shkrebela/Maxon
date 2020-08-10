@@ -1,0 +1,17 @@
+.logo {
+  @include flex(center, center);
+  padding: 15px;
+  width: 157px;
+  height: 100px;
+  margin: 0 auto;
+
+  &__img {
+    display: block;
+    transition: .3s ease-in-out;
+    fill: white;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}

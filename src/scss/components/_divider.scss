@@ -1,0 +1,19 @@
+.divider {
+  display: block;
+  max-width: 230px;
+  width: 100%;
+  height: 40px;
+  margin: 0 auto 35px;
+  fill: transparentize(white, 0.3);
+
+  &--primary-color {
+    fill: transparentize($primary-color, 0.3);
+  }
+
+  &--small {
+    max-width: 200px;
+    width: 100%;
+    height: 20px;
+    margin: 0 auto 20px;
+  }
+}

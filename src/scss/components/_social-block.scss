@@ -1,0 +1,23 @@
+.social-block {
+  $this: &;
+  @include flex(space-around, center);
+  flex-wrap: wrap;
+
+  &__icon {
+    padding: 5px;
+
+    &:hover {
+      #{$this}__img {
+        color: $primary-color;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__img {
+    width: 21px;
+    height: 21px;
+    color: white;
+    opacity: 0.7;
+  }
+}

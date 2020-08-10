@@ -1,0 +1,25 @@
+//fonts
+$font-family--primary: "Open Sans";
+$font-family--secondary: "Open Sans";
+$font-family--third: "Open Sans";
+$font-family--fourth: "Open Sans";
+$font-size-base: 14px;
+
+$font-primary: 400 $font-size-base $font-family--primary;
+$font-secondary: 400 $font-size-base $font-family--secondary;
+$font-third: 400 $font-size-base $font-family--third;
+$font-fourth: 400 $font-size-base $font-family--fourth;
+
+//media points
+$media-sm: 540px;
+$media-md: 720px;
+$media-lg: 960px;
+$media-xl: 1400px;
+
+//color
+
+$primary-color: #323278;
+$menu-color: white;
+$primary-color--hover: transparentize($primary-color, 0.4);
+$text-color--light: white;
+$text-color--dark: black;
