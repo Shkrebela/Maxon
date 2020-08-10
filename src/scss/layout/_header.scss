@@ -10,32 +10,31 @@
   &__menu {
     @include flex(space-between, center);
     overflow: hidden;
-    transition: .50s ease-in-out ;
+    transition: .3s ease-in-out;
 
     @media (max-width: $media-lg) {
       justify-content: flex-start;
       align-items: flex-end;
       flex-direction: column;
-      width: 200px;
-      height: 0;
       position: absolute;
-      padding: 0 20px;
       top: 100%;
       right: 0;
+      width: 200px;
+      height: 0;
+      padding: 0 20px;
       background-color: white;
       #{$this}__link {
-      padding: rem(18px) rem(28px);
+        padding: rem(18px) rem(28px);
       }
 
-    &--active-menu-toggle {
-      height: 400px;
-      padding: 20px;
+      &--active-menu-toggle {
+        height: 400px;
+        padding: 20px;
+      }
     }
   }
-  }
+
   &__link {
-    @include flex(center, center);
-    position: relative;
     padding: rem(28px) rem(28px);
     font: $font-primary;
     font-weight: 500;
@@ -47,8 +46,6 @@
     &:hover {
       color: inherit;
       opacity: 0.5;
-      //@media (max-width: $media-md) {
-
     }
   }
 }

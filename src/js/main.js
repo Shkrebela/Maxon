@@ -28,7 +28,6 @@ menuToggle.addEventListener('click', () => {
     toggleClass(menuToggle, 'menu-toggle--active-menu-toggle');
     toggleClass(menu, 'main-header__menu--active-menu-toggle');
     toggleClass(body, 'body--stop-scrolling');
-    toggleClass(menuLink, 'menu-header__link--active-menu-toggle');
 });
 
 if (window.matchMedia("(max-width: 960px)").matches) {
@@ -37,8 +36,7 @@ if (window.matchMedia("(max-width: 960px)").matches) {
             toggleClass(menuToggle, 'menu-toggle--active-menu-toggle');
             toggleClass(menu, 'main-header__menu--active-menu-toggle');
             toggleClass(body, 'body--stop-scrolling');
-            toggleClass(menuLink, 'menu-header__link--active-menu-toggle');
-        });
+       });
     });
 }
 
