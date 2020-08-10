@@ -13,7 +13,6 @@
   &--active-menu-toggle {
     #{$this}__line {
       width: 0;
-      background-color: $primary-color;
 
       &::before {
         top: 0;
@@ -34,7 +33,7 @@
     display: block;
     width: 25px;
     height: 2px;
-    background-color: white;
+    background-color: $secondary-color;
     transition: 0s;
 
     &::before, &::after {
@@ -83,7 +82,7 @@
     border: 1px solid $menu-color;
     background-color: $menu-color;
     text-transform: capitalize;
-    font: $font-fourth;
+    font: $font-secondary;
     margin: 10px 0 0;
 
     &:hover {

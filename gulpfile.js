@@ -15,7 +15,8 @@ let path = {
         html: [sourceFolder + "/*.html", "!" + sourceFolder + "/_*.html"],
         css: sourceFolder + "/scss/main.scss",
         js: sourceFolder + "/js/main.js",
-        img: sourceFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
+        img: sourceFolder + "/img/**/*.{jpg,png,gif,ico,webp}",
+        svg: sourceFolder + "/img/svg/*.svg",
         fonts: sourceFolder + "/fonts/*.{ttf,woff}",
     },
     watch: {
@@ -99,7 +100,7 @@ function js() {
 }
 
 function img() {
-    return src(path.src.img)
+     src([path.src.svg])
         .pipe(svgSprite({
             mode: {
                 stack: {
@@ -107,6 +108,10 @@ function img() {
                 }
             }
         }))
+        .pipe(dest(path.build.img))
+        .pipe(browsersync.stream())
+    return src(path.src.img)
+        .pipe(fileinclude())
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
 }
@@ -144,19 +149,6 @@ function fontsStyle(params) {
 
 function cb() {}
 
-
-// gulp.task('svgSprite', function () {
-//     return gulp.src([sourceFolder + '/img/svg/*.svg'])
-//         .pipe(svgSprite({
-//             mode: {
-//                 stack: {
-//                     sprite: "../sprite.svg",
-//                 }
-//             }
-//         }))
-//         .pipe(dest(path.build.img));
-// })
-
 function watchFiles(params) {
     gulp.watch([path.watch.html], html);
     gulp.watch([path.watch.css], css);
@@ -169,7 +161,7 @@ function clean(params) {
     return del(path.clean)
 }
 
-let build = gulp.series(clean, gulp.parallel(fonts, img, js, css, html), fontsStyle);
+let build = gulp.series(clean, gulp.parallel( js, css, html, img, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;

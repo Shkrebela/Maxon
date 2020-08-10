@@ -1,48 +1,54 @@
 .main-header {
- 
-  }
+  $this: &;
+  background-color: $background-color--light;
+  position: relative;
 
-  &__social-box {
+  &__container {
+    @include flex(space-between, center);
   }
 
   &__menu {
-    
-    transition: left .3s ease-in-out;
+    @include flex(space-between, center);
+    overflow: hidden;
+    transition: .50s ease-in-out ;
 
     @media (max-width: $media-lg) {
       justify-content: flex-start;
+      align-items: flex-end;
       flex-direction: column;
-      width: 250px;
-      height: 100vh;
+      width: 200px;
+      height: 0;
       position: absolute;
-      top: 0;
-      padding: 0;
-      left: -200%;
-/*       background-color: ; */
+      padding: 0 20px;
+      top: 100%;
+      right: 0;
+      background-color: white;
       #{$this}__link {
-/*         padding: rem() rem(); */
+      padding: rem(18px) rem(28px);
       }
-    }
 
     &--active-menu-toggle {
-      left: 0;
+      height: 400px;
+      padding: 20px;
     }
   }
-
+  }
   &__link {
     @include flex(center, center);
     position: relative;
-/*     font: $font-; */
-/*     font-size: ; */
-/*     color: $text-color--; */
+    padding: rem(28px) rem(28px);
+    font: $font-primary;
+    font-weight: 500;
+    color: $menu-color;
+    text-transform: uppercase;
     white-space: nowrap;
-/*     padding: rem() rem(); */
     transition: .3s ease-in-out;
 
     &:hover {
-      @media (max-width: $media-md) {
-        
-      }
+      color: inherit;
+      opacity: 0.5;
+      //@media (max-width: $media-md) {
+
     }
   }
 }

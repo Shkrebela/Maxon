@@ -1,14 +1,11 @@
 //fonts
-$font-family--primary: "Open Sans";
-$font-family--secondary: "Open Sans";
-$font-family--third: "Open Sans";
-$font-family--fourth: "Open Sans";
-$font-size-base: 14px;
+$font-family--primary: "Roboto";
+$font-family--secondary: "Poppins";
+
+$font-size-base: 15px;
 
 $font-primary: 400 $font-size-base $font-family--primary;
-$font-secondary: 400 $font-size-base $font-family--secondary;
-$font-third: 400 $font-size-base $font-family--third;
-$font-fourth: 400 $font-size-base $font-family--fourth;
+$font-secondary: 700 $font-size-base $font-family--secondary;
 
 //media points
 $media-sm: 540px;
@@ -17,9 +14,16 @@ $media-lg: 960px;
 $media-xl: 1400px;
 
 //color
-
-$primary-color: #323278;
-$menu-color: white;
+$primary-color: #112e41;
 $primary-color--hover: transparentize($primary-color, 0.4);
-$text-color--light: white;
-$text-color--dark: black;
+$secondary-color: #ff7214;
+$secondary-color--hover: transparentize($secondary-color, 0.4);
+
+$menu-color: #323541;
+
+$paragraph-color--light: #888888;
+$paragraph-color--dark: #999999;
+
+$background-color--light: #f7f7f7;
+$background-color--dark: #162b45;
+$background-color-bottom: #10233a;
