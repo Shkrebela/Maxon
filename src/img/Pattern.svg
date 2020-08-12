@@ -1,0 +1,7 @@
+<svg width="550" height="460" xmlns="http://www.w3.org/2000/svg">
+    <pattern id="Pattern" x="0" y="0" width="0.03" height="0.03">
+        <circle cx="1" cy="1" r="1" fill="#888888" fill-opacity="0.7"/>
+        <circle cx="9" cy="9" r="1" fill="#888888" fill-opacity="0.7"/>
+    </pattern>
+    <rect fill="url(#Pattern)" width="550" height="460"/>
+</svg>

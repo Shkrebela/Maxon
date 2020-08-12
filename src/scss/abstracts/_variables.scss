@@ -4,15 +4,17 @@ $font-family--secondary: "Poppins";
 
 $font-size-base: 15px;
 
-$font-primary: 400 $font-size-base $font-family--primary;
-$font-secondary: 700 $font-size-base $font-family--secondary;
+$font-primary: 400 1rem $font-family--primary;
+$font-secondary: 700 1rem $font-family--secondary;
 
 //media points
-$media-sm: 540px;
-$media-md: 720px;
-$media-lg: 960px;
+$media-sm: 576px;
+$media-md: 768px;
+$media-lg: 992px;
 $media-xl: 1400px;
-
+.d{
+  color: transparent;
+}
 //color
 $primary-color: #112e41;
 $primary-color--hover: transparentize($primary-color, 0.4);

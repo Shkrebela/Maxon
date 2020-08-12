@@ -1,37 +1,63 @@
-//html,
-//body {
-//  font: $font-primary;
-//  @media (max-width: $media-xl) {
-//    font-size: 14px;
-//  }
-//  @media (max-width: $media-md) {
-//    font-size: 12px;
-//  }
-//}
-//
-//p, span {
-//  //color: $text-color--;
-//  margin-bottom: rem();
-//}
-//
-//h1, h2, h3, h4, h5, h6 {
-//  font-family: $font-family--;
-//  font-weight: 400;
-//}
-//
-//h2 {
-//  font-size: rem();
-//  @include media(font-size, rem(), rem(), rem(), rem())
-//}
-//
-//h3 {
-//  font-size: rem();
-//}
-//
-//h4 {
-//  font-size: rem();
-//}
-//
-//h5 {
-//  font-size: rem();
-//}
+html,
+body {
+  font-family: $font-family--primary;
+  font-size: $font-size-base;
+  @include media(font-size, 14px, 14px, 13px, 12px);
+}
+
+p, span {
+  font: $font-primary;
+  color: $paragraph-color--light;
+  line-height: rem(27px);
+}
+
+h1 {
+  font: $font-secondary;
+  font-size: rem(60px);
+  line-height: rem(70px);
+  color: $primary-color;
+  margin-bottom: rem(50px);
+}
+
+h2 {
+  font: $font-secondary;
+  font-size: rem(42px);
+  color: $primary-color;
+  margin-bottom: rem(30px);
+}
+
+h3 {
+  font: $font-secondary;
+  font-size: rem(30px);
+  color: $primary-color;
+  margin-bottom: rem(30px);
+}
+
+h4 {
+  font: $font-secondary;
+  font-size: rem(22px);
+  font-weight: 600;
+  color: $primary-color;
+  margin-bottom: rem(30px);
+}
+
+h5 {
+  font: $font-primary;
+  font-size: rem(18px);
+  color: $secondary-color;
+  margin-bottom: rem(30px);
+}
+
+h6 {
+  font: $font-primary;
+  font-size: rem(14px);
+  color: $secondary-color;
+  text-transform: uppercase;
+  margin-bottom: rem(30px);
+}
+
+
+
+
+
+

@@ -1,0 +1,10 @@
+.primary-screen {
+  background-color: $background-color--light;
+
+  &__img {
+    border-radius: 100% 32% 51% 58% / 57% 56% 59% 76%;
+    max-width: 100%;
+    padding: 15px;
+    margin-bottom: 30px;
+  }
+}

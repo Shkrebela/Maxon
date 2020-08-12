@@ -15,7 +15,7 @@ let path = {
         html: [sourceFolder + "/*.html", "!" + sourceFolder + "/_*.html"],
         css: sourceFolder + "/scss/main.scss",
         js: sourceFolder + "/js/main.js",
-        img: sourceFolder + "/img/**/*.{jpg,png,gif,ico,webp}",
+        img: [sourceFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}", "!" + sourceFolder + "/img/svg/*.svg"],
         svg: sourceFolder + "/img/svg/*.svg",
         fonts: sourceFolder + "/fonts/*.{ttf,woff}",
     },
@@ -111,7 +111,6 @@ function img() {
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
     return src(path.src.img)
-        .pipe(fileinclude())
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
 }

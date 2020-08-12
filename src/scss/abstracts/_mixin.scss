@@ -2,13 +2,13 @@
 
 @mixin font($font_name, $file_name, $weight, $style) {
 
-    @font-face {
-        font-family: $font_name;
-        font-display: swap;
-        src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
-        font-weight: #{$weight};
-        font-style: #{$style};
-    }
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"), url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
 }
 
 @mixin flex($row, $column) {
@@ -29,5 +29,11 @@
   }
   @media (max-width: $media-sm) {
     #{$parameter}: $value-4
+  }
+}
+
+@mixin media-display-none($display) {
+  @media (max-width: $display) {
+    display: none;
   }
 }

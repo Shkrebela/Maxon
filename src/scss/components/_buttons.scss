@@ -57,39 +57,24 @@
 }
 
 .button {
-  @include flex(center, center);
-  width: rem(228px);
-  padding: 15px 5px;
-  border: 1px solid white;
-  margin: 0 15px 15px;
-  border-radius: 3px;
-  background-color: transparentize(white, 0.7);
+  display: inline-block;
+  padding: rem(25px) rem(40px);
+  border-radius: 30px;
+  background-color: $secondary-color;
   box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.25);
-  font-size: 1.12rem;
+  font-size: rem(14px);
   text-transform: uppercase;
   color: white;
   cursor: pointer;
   transition: .3s ease-in-out;
 
   &:hover {
-    background-color: transparentize(black, 0.3);
-    border: 1px solid transparentize(black, 0.3);
+    color: white;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.5);
+    background-color: transparentize($secondary-color, 0.1);
   }
 
-  &--color {
-    width: rem(200px);
-    padding: 7px 5px;
-    border: 1px solid $menu-color;
-    background-color: $menu-color;
-    text-transform: capitalize;
-    font: $font-secondary;
-    margin: 10px 0 0;
 
-    &:hover {
-      background-color: $primary-color--hover;
-      border: 1px solid $primary-color--hover;
-    }
-  }
 }
 
 .arrow-up {
@@ -102,7 +87,7 @@
   transition: .3s ease-in-out;
 
   &:hover {
-    background-color: $primary-color--hover;
+    background-color: $secondary-color;
   }
 
   &__link {

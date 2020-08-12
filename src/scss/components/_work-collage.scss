@@ -1,0 +1,41 @@
+.work-collage {
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 3%;
+    left: 12%;
+    bottom: 20%;
+    right: 24%;
+    background-image: url("../../img/Pattern.svg");
+    background-size: cover;
+    @include media-display-none($media-sm)
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 61%;
+    left: 65%;
+    width: 21%;
+    height: 22%;
+    background-image: url("../../img/Shape.svg");
+    background-size: cover;
+    @include media-display-none($media-sm)
+  }
+  &__pattern {
+    position: absolute;
+    max-width: 549px;
+  }
+  &__img {
+    width: 100%;
+  }
+
+  &__title {
+    margin-right: -30px;
+    margin-top: 40px;
+    max-width: 380px;
+    position: relative;
+    z-index: 10;
+  }
+}

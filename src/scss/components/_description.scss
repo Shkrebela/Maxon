@@ -1,0 +1,26 @@
+.description {
+  margin: 0 auto;
+  @media (max-width: $media-md) {
+    margin: 0 auto;
+  }
+
+  &__text-top {
+    font-size: 20px;
+    font-weight: 500;
+    color: $primary-color;
+    line-height: rem(30px);
+    margin: 0 auto 5px;
+  }
+
+  &--position-right {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 15px 0 auto;
+  }
+
+  &--position-left {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto 0 15px;
+  }
+}

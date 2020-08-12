@@ -1,0 +1,24 @@
+$pt: 75px;
+$pb: 75px;
+
+.section {
+  padding-top: $pt;
+  padding-bottom: $pb;
+  @media (max-width: $media-sm) {
+    padding-top: $pt/3;
+    padding-bottom: $pb/3;
+  }
+  &--big-top {
+    padding-top: $pt*2;
+    @media (max-width: $media-sm) {
+      padding-top: $pt*2/3;
+    }
+  }
+  &--big-small {
+    padding-top: $pt/2;
+    @media (max-width: $media-sm) {
+      padding-top: $pt/3;
+    }
+  }
+
+}
