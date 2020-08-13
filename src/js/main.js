@@ -1,18 +1,24 @@
+
+@@include('../../node_modules/swiper/swiper-bundle.js')
+
 // import Swiper, {Navigation, Pagination, Mousewheel} from 'swiper';
 //
 // Swiper.use([Navigation, Pagination, Mousewheel]);
-//
-// let swiperFirst;
-// swiperFirst = new Swiper('.reviews__swiper-container', {
-//     direction: 'horizontal',
-//     slidesPerView: 1,
-//     spaceBetween: 30,
-//     mousewheel: true,
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//     },
-// });
+
+let swiperFirst;
+swiperFirst = new Swiper('.testimonials__swiper-container', {
+    direction: 'horizontal',
+    slidesPerView: 1,
+    spaceBetween: 30,
+    mousewheel: true,
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+});
 
 //mobil button
 let menuToggle = document.getElementById('menu-toggle');

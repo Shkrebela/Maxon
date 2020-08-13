@@ -1,5 +1,15 @@
-@import "../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css";
-@import "../../node_modules/bootstrap/dist/css/bootstrap-reboot.min.css";
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/utilities";
+@import '../../node_modules/swiper/swiper-bundle.min.css';
+//@import '../../node_modules/swiper/swiper.scss';
+//@import '~swiper';
+
+
 
 @import 'abstracts/_variables.scss';
 @import 'abstracts/_mixin.scss';
@@ -9,17 +19,22 @@
 @import 'base/_reset.scss';
 @import 'base/_typography.scss';
 
+@import 'components/_achievement-block.scss';
 @import 'components/_buttons.scss';
 @import 'components/_custom-container.scss';
 @import 'components/_description.scss';
 @import 'components/_divider.scss';
+@import 'components/_feature-card.scss';
 @import 'components/_logo.scss';
 @import 'components/_form.scss';
 @import 'components/_icon-cards-block.scss';
 @import 'components/_other.scss';
 @import 'components/_section.scss';
+@import 'components/_review.scss';
 @import 'components/_social-block.scss';
+@import 'components/_title.scss';
 @import 'components/_work-collage.scss';
+@import 'components/_worker-card.scss';
 
 @import 'layout/_header.scss';
 @import 'layout/_footer.scss';

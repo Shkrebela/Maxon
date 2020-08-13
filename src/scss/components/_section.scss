@@ -8,13 +8,13 @@ $pb: 75px;
     padding-top: $pt/3;
     padding-bottom: $pb/3;
   }
-  &--big-top {
-    padding-top: $pt*2;
+  &--pt-big {
+    padding-top: $pt*1.5;
     @media (max-width: $media-sm) {
-      padding-top: $pt*2/3;
+      padding-top: $pt*1.5/3;
     }
   }
-  &--big-small {
+  &--pt-small {
     padding-top: $pt/2;
     @media (max-width: $media-sm) {
       padding-top: $pt/3;

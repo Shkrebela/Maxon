@@ -1,9 +1,8 @@
-//@import '~swiper/swiper-bundle.min.css';
 
 .swiper-container {
-  width: 100%;
+  width: 700px;
   height: 100%;
-  margin-left: auto;
+  margin-left: 0;
   margin-right: auto;
 }
 
@@ -24,28 +23,23 @@
   align-items: center;
 }
 
-.swiper-pagination {
-  @include flex(center, center);
+.swiper-button-next,
+.swiper-button-prev {
+  left: 200px;
+  right: unset;
+  top: 80px;
 
-  .swiper-pagination-bullet {
-    background-color: transparent;
-    width: 30px;
-    height: 30px;
-    @include flex(center, center);
-
-    &::after {
-      content: "";
-      display: block;
-      width: 15px;
-      height: 15px;
-      background-color: transparentize(white, 0.5);
-    }
+  &:after {
+    display: none;
   }
 
-  .swiper-pagination-bullet-active {
-
-    &::after {
-      background-color: transparentize($primary-color, 0.5);
-    }
+  &__icon {
+    width: 37px;
+    height: 11px;
   }
+
+}
+
+.swiper-button-next {
+  transform: translateX(100px);
 }

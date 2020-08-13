@@ -9,6 +9,7 @@ let path = {
         css: projectFolder + "/css",
         js: projectFolder + "/js",
         img: projectFolder + "/img",
+        media: projectFolder + "/media",
         fonts: projectFolder + "/fonts",
     },
     src: {
@@ -16,6 +17,7 @@ let path = {
         css: sourceFolder + "/scss/main.scss",
         js: sourceFolder + "/js/main.js",
         img: [sourceFolder + "/img/**/*.{jpg,png,svg,gif,ico,webp}", "!" + sourceFolder + "/img/svg/*.svg"],
+        media: sourceFolder + "/media/**/*.{mp4,webm,mp3}",
         svg: sourceFolder + "/img/svg/*.svg",
         fonts: sourceFolder + "/fonts/*.{ttf,woff}",
     },
@@ -105,13 +107,21 @@ function img() {
             mode: {
                 stack: {
                     sprite: "../sprite.svg",
-                }
+                },
+                symbol : true
             }
+
         }))
         .pipe(dest(path.build.img))
         .pipe(browsersync.stream())
     return src(path.src.img)
         .pipe(dest(path.build.img))
+        .pipe(browsersync.stream())
+}
+
+function media() {
+    return src(path.src.media)
+        .pipe(dest(path.build.media))
         .pipe(browsersync.stream())
 }
 
@@ -160,9 +170,10 @@ function clean(params) {
     return del(path.clean)
 }
 
-let build = gulp.series(clean, gulp.parallel( js, css, html, img, fonts), fontsStyle);
+let build = gulp.series(clean, gulp.parallel( js, css, html, img, fonts, media), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
+exports.media = media;
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
 exports.img = img;

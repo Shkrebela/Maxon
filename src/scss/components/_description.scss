@@ -1,7 +1,7 @@
 .description {
-  margin: 0 auto;
+  margin: 15px auto;
   @media (max-width: $media-md) {
-    margin: 0 auto;
+    margin: 15px auto;
   }
 
   &__text-top {
@@ -15,12 +15,12 @@
   &--position-right {
     max-width: 540px;
     width: 100%;
-    margin: 0 15px 0 auto;
+    margin: 15px 15px 15px auto;
   }
 
   &--position-left {
     max-width: 540px;
     width: 100%;
-    margin: 0 auto 0 15px;
+    margin: 15px auto 15px 15px;
   }
 }

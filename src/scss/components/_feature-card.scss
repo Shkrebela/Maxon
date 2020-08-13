@@ -1,0 +1,60 @@
+.feature-card {
+  $this: &;
+  padding: rem(45px) rem(25px);
+  text-align: center;
+  max-width: 263px;
+  border-radius: 5px;
+  border: 5px solid #f6f7fb;
+  position: relative;
+  margin: 0 auto 15px;
+
+  &:hover {
+    box-shadow: 0 10px 40px rgba(140, 94, 255, 0.1);
+    border: 5px solid white;
+  }
+
+  &__icon-box {
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    background-color: #ffeee2;
+    @include flex(center, center);
+    margin: 0 auto rem(35px);
+  }
+
+  &__icon {
+    width: 27px;
+    height: 27px;
+    fill: #ff7214;;
+  }
+
+  &--color-purple {
+    #{$this}__icon-box {
+      background-color: #e6dcff;
+    }
+
+    #{$this}__icon {
+      fill: #9165ff;
+    }
+  }
+
+  &--color-green {
+    #{$this}__icon-box {
+      background-color: #caf6ff;
+    }
+
+    #{$this}__icon {
+      fill: #178efd;
+    }
+  }
+
+  &--color-pink {
+    #{$this}__icon-box {
+      background-color: #ffe9f3;
+    }
+
+    #{$this}__icon {
+      fill: #ff1481;
+    }
+  }
+}
