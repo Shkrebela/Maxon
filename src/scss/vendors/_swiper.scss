@@ -1,4 +1,3 @@
-
 .swiper-container {
   width: 700px;
   height: 100%;
@@ -38,6 +37,9 @@
     height: 11px;
   }
 
+  &:focus {
+    outline: none;
+  }
 }
 
 .swiper-button-next {

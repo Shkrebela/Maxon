@@ -4,7 +4,8 @@
   "description": "test",
   "main": "src/index.html",
   "dependencies": {
-    "bootstrap": "^4.5.2"
+    "bootstrap": "^4.5.2",
+    "swiper": "^6.1.1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.12",

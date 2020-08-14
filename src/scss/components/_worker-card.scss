@@ -14,6 +14,7 @@
 
   &__name {
     margin-bottom: rem(20px);
+
     &--color {
       color: $secondary-color;
     }
@@ -34,6 +35,8 @@
     position: relative;
     margin: 0 20px rem(25px);
     width: 100%;
+    transition: .3s ease-in-out;
+
     &:hover {
       color: $secondary-color;
     }
@@ -50,6 +53,7 @@
       background-color: #b4b5b8;
       opacity: 0.5;
     }
+
     &:last-child::after {
       display: none;
     }

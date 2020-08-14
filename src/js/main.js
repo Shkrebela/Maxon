@@ -1,12 +1,7 @@
-
 @@include('../../node_modules/swiper/swiper-bundle.js')
 
-// import Swiper, {Navigation, Pagination, Mousewheel} from 'swiper';
-//
-// Swiper.use([Navigation, Pagination, Mousewheel]);
-
-let swiperFirst;
-swiperFirst = new Swiper('.testimonials__swiper-container', {
+let swiper;
+swiper = new Swiper('.testimonials__swiper-container', {
     direction: 'horizontal',
     slidesPerView: 1,
     spaceBetween: 30,

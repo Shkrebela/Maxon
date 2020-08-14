@@ -12,6 +12,7 @@
     background-size: cover;
     @include media-display-none($media-sm)
   }
+
   &:after {
     content: "";
     position: absolute;
@@ -23,10 +24,12 @@
     background-size: cover;
     @include media-display-none($media-sm)
   }
+
   &__pattern {
     position: absolute;
     max-width: 549px;
   }
+
   &__img {
     width: 100%;
   }

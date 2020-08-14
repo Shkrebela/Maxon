@@ -5,11 +5,8 @@
 @import "../../node_modules/bootstrap/scss/grid";
 @import "../../node_modules/bootstrap/scss/reboot";
 @import "../../node_modules/bootstrap/scss/utilities";
+
 @import '../../node_modules/swiper/swiper-bundle.min.css';
-//@import '../../node_modules/swiper/swiper.scss';
-//@import '~swiper';
-
-
 
 @import 'abstracts/_variables.scss';
 @import 'abstracts/_mixin.scss';
@@ -20,13 +17,14 @@
 @import 'base/_typography.scss';
 
 @import 'components/_achievement-block.scss';
+@import 'components/_blog-card.scss';
 @import 'components/_buttons.scss';
-@import 'components/_custom-container.scss';
+@import 'components/contact-block';
 @import 'components/_description.scss';
 @import 'components/_divider.scss';
 @import 'components/_feature-card.scss';
 @import 'components/_logo.scss';
-@import 'components/_form.scss';
+@import 'components/_input-form.scss';
 @import 'components/_icon-cards-block.scss';
 @import 'components/_other.scss';
 @import 'components/_section.scss';
@@ -37,13 +35,7 @@
 @import 'components/_worker-card.scss';
 
 @import 'layout/_header.scss';
-@import 'layout/_footer.scss';
-
 @import 'layout/_page.scss';
-//@import 'layout/sections/';
-//@import 'layout/sections/';
-//@import 'layout/sections/';
-//@import 'layout/sections/';
-//@import 'layout/sections/';
+@import 'layout/_footer.scss';
 
 @import 'vendors/_swiper.scss';

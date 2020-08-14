@@ -7,6 +7,7 @@
   border: 5px solid #f6f7fb;
   position: relative;
   margin: 0 auto 15px;
+  transition: .3s ease-in-out;
 
   &:hover {
     box-shadow: 0 10px 40px rgba(140, 94, 255, 0.1);

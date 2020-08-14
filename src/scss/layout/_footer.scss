@@ -1,20 +1,37 @@
-.footer {
-/*   background-color: ; */
-  padding: 0;
-
-  &__container {
-    @include flex(space-around, flex-start);
-    flex-wrap: wrap;
+.top-footer {
+  background-color: $background-color--dark;
+  padding-top: 75px;
+  padding-bottom: 20px;
+  @media (max-width: $media-sm) {
+    padding-top: 75px/3;
+    padding-bottom: 20px/3;
   }
 
-  &__box {
-    max-width: 200px;
-    width: 100%;
-    min-width: 100px;
-    flex: 1 1 100px;
-    margin-bottom: 0;
+  &__title {
+    color: white;
+    margin: 0 0 rem(35px);
   }
 
-  &__description {
+  &__text {
+    color: $paragraph-color--dark;
+    margin-bottom: rem(20px);
+  }
+}
+
+.bottom-footer {
+  padding: 25px 0;
+  background-color: $background-color--bottom;
+
+  &__text {
+    margin: 0;
+  }
+
+  &__link {
+    color: $secondary-color;
+    transition: .3s ease-in-out;
+
+    &:hover {
+      color: white;
+    }
   }
 }
