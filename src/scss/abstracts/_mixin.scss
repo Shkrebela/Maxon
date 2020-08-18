@@ -17,23 +17,3 @@
   align-items: $column;
 }
 
-@mixin media($parameter, $value-1, $value-2, $value-3, $value-4) {
-  @media (max-width: $media-xl) {
-    #{$parameter}: $value-1
-  }
-  @media (max-width: $media-lg) {
-    #{$parameter}: $value-2
-  }
-  @media (max-width: $media-md) {
-    #{$parameter}: $value-3
-  }
-  @media (max-width: $media-sm) {
-    #{$parameter}: $value-4
-  }
-}
-
-@mixin media-display-none($display) {
-  @media (max-width: $display) {
-    display: none;
-  }
-}

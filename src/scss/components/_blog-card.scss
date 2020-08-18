@@ -41,14 +41,11 @@
     }
   }
 
-  &__icon-link {
+  &__rate-box {
+    display: inline-block;
     margin-right: 30px;
     color: $paragraph-color--light;
     transition: .3s ease-in-out;
-
-    &:hover {
-      color: $secondary-color;
-    }
   }
 
   &__icon {

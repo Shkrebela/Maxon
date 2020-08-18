@@ -2,55 +2,49 @@ html,
 body {
   font-family: $font-family--primary;
   font-size: $font-size-base;
-  @include media(font-size, 14px, 14px, 13px, 12px);
+  @media (max-width: $media-xl) {
+    font-size: 14px
+  }
 }
 
 p, span {
   font: $font-primary;
   color: $paragraph-color--light;
-  line-height: rem(27px);
+  line-height: 1.6;
 }
 
 h1 {
-  font: $font-secondary;
-  font-size: rem(60px);
-  line-height: rem(70px);
+  font: 700 rem(60px)/1.2 $font-family--secondary;
   color: $primary-color;
   margin-bottom: rem(50px);
 }
 
 h2 {
-  font: $font-secondary;
-  font-size: rem(42px);
+  font: 700 rem(42px)/1.2 $font-family--secondary;
   color: $primary-color;
   margin-bottom: rem(30px);
 }
 
 h3 {
-  font: $font-secondary;
-  font-size: rem(30px);
+  font: 700 rem(30px)/1.2 $font-family--secondary;
   color: $primary-color;
   margin-bottom: rem(30px);
 }
 
 h4 {
-  font: $font-secondary;
-  font-size: rem(22px);
-  font-weight: 600;
+  font: 600 rem(22px)/1.2 $font-family--secondary;
   color: $primary-color;
   margin-bottom: rem(30px);
 }
 
 h5 {
-  font: $font-primary;
-  font-size: rem(18px);
+  font: 400 rem(18px) $font-family--primary;
   color: $secondary-color;
   margin-bottom: rem(30px);
 }
 
 h6 {
-  font: $font-primary;
-  font-size: rem(14px);
+  font: 400 rem(14px) $font-family--primary;
   color: $secondary-color;
   text-transform: uppercase;
   margin-bottom: rem(30px);

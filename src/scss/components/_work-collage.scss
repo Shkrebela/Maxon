@@ -10,7 +10,9 @@
     right: 24%;
     background-image: url("../../img/Pattern.svg");
     background-size: cover;
-    @include media-display-none($media-sm)
+    @media (max-width: $media-sm) {
+      display: none;
+    }
   }
 
   &:after {
@@ -22,7 +24,9 @@
     height: 22%;
     background-image: url("../../img/Shape.svg");
     background-size: cover;
-    @include media-display-none($media-sm)
+    @media (max-width: $media-sm) {
+      display: none;
+    }
   }
 
   &__pattern {
@@ -35,7 +39,7 @@
   }
 
   &__title {
-    margin: 40px -30px 0 0;
+    margin: 40px 0 0 0;
     max-width: 380px;
     position: relative;
     z-index: 10;

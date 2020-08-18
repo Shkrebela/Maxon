@@ -15,7 +15,7 @@
   &__name {
     margin-bottom: rem(20px);
 
-    &--color {
+    &:hover {
       color: $secondary-color;
     }
   }

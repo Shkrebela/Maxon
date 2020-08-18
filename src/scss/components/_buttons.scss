@@ -20,17 +20,15 @@
 
   &--active-menu-toggle {
     #{$this}__line {
-      width: 0;
+      height: 0;
 
       &::before {
         top: 0;
-        left: 0;
         transform: rotate(-45deg);
       }
 
       &::after {
         top: 0;
-        left: 0;
         transform: rotate(45deg);
       }
     }

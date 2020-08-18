@@ -17,13 +17,14 @@
       justify-content: flex-start;
       align-items: flex-end;
       flex-direction: column;
-      position: absolute;
-      top: 100%;
+      position: fixed;
+      top: 75px;
       right: 0;
-      width: 200px;
+      width: 90px;
       height: 0;
+      border-radius: 100% 0 0 100% / 81% 0 0 54%;
       padding: 0 20px;
-      background-color: white;
+      background-color: rgba(255, 255, 255, 0.8);
       #{$this}__link {
         padding: rem(18px) rem(28px);
       }
@@ -31,6 +32,7 @@
       &--active-menu-toggle {
         height: 400px;
         padding: 20px;
+        width: 200px;
       }
     }
   }
