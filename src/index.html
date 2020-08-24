@@ -283,7 +283,7 @@
                                     <div class="logo-block d-flex">
                                         <img class="review__logo" src="./img/Logo-partners.svg" alt="">
                                         <div class="review__box">
-                                            <h4 class="review__name mb-2">Millard  Castinson</h4>
+                                            <h4 class="review__name mb-2">Millard Castinson</h4>
                                             <p class="review__position">Software Developer</p>
                                         </div>
                                     </div>
@@ -533,7 +533,8 @@
                         <div class="row">
                             <div class="col-sm pr-sm-2 pr-4">
                                 <div class="input-form">
-                                    <input id="Name" class="input-form__input" type="text" placeholder="Full Name" required>
+                                    <input id="Name" class="input-form__input" type="text" placeholder="Full Name"
+                                           required>
                                     <label class="input-form__label" for="Name">Name</label>
                                 </div>
                             </div>
@@ -579,13 +580,11 @@
     </section>
 </main>
 @@include('_footer.html')
-<div class="arrow-up arrow-up--flow">
-    <a class="arrow-up__link" href="#top">
-        <svg class="arrow-up__icon">
-            <use xlink:href="./img/sprite.svg#angle"></use>
-        </svg>
-    </a>
-</div>
+<a class="arrow-up arrow-up--none" href="#top">
+    <svg class="arrow-up__icon">
+        <use xlink:href="./img/sprite.svg#angle"></use>
+    </svg>
+</a>
 <script src="./js/main.js"></script>
 </body>
 </html>

@@ -37,8 +37,17 @@ if (window.matchMedia("(max-width: 960px)").matches) {
             toggleClass(menuToggle, 'menu-toggle--active-menu-toggle');
             toggleClass(menu, 'main-header__menu--active-menu-toggle');
             toggleClass(body, 'body--stop-scrolling');
-       });
+        });
     });
 }
 
+let arrowUp = document.querySelector('.arrow-up');
+
+window.addEventListener('scroll', function () {
+    if (pageYOffset > 300) {
+        arrowUp.classList.remove("arrow-up--none")
+    } else {
+        arrowUp.classList.add("arrow-up--none")
+    }
+});
 
