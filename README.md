@@ -1,6 +1,7 @@
-# Lending Maxon
+# Landing Maxon
 The project was created for the portfolio (non-commercial purposes).<br> 
 Find the template used the [link](https://themeies.com/item/maxon-creative-agency-corporate-template-free-psd/)
+Also, you can visit this [page](https://shkrebela.github.io/Maxon/) for reviewing the site on GitHub Page. 
 
 ![](https://github.com/Shkrebela/TEST/blob/master/ezgif.com-video-to-gif%20(1).gif?raw=true)
 
