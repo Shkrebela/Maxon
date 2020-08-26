@@ -40,7 +40,7 @@ Launch the Laravel Mix for:<br>
 gulp
 ```
 **5th Step**<br>
-The link will open automatically or click ![here](http://localhost:3000).
+The link will open automatically or click [here](http://localhost:3000).
 
 ## Built With
 
