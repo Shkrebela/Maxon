@@ -1,6 +1,6 @@
 # Landing Maxon
 The project was created for the portfolio (non-commercial purposes).<br> 
-Find the template used the [link](https://themeies.com/item/maxon-creative-agency-corporate-template-free-psd/)
+Find the template used the [link](https://themeies.com/item/maxon-creative-agency-corporate-template-free-psd/) <br> 
 Also, you can visit this [page](https://shkrebela.github.io/Maxon/) for reviewing the site on GitHub Page. 
 
 ![](https://github.com/Shkrebela/TEST/blob/master/ezgif.com-video-to-gif%20(1).gif?raw=true)
@@ -37,7 +37,7 @@ npm install
 Launch the Laravel Mix for:<br> 
 - creating the folder "dist" and generating files and creating the local server;<br> 
 ```
-gulp
+sudo npm run gulp
 ```
 **5th Step**<br>
 The link will open automatically or click [here](http://localhost:3000).
