@@ -9327,13 +9327,13 @@
         toggleClass(body, 'body--stop-scrolling');
     });
 
-    if (window.matchMedia("(max-width: 960px)").matches) {
-        Array.from(menuLink).forEach(i => {
-            i.addEventListener('click', () => {
+    for (let i = 0; i < menuLink.length; i++) {
+        menuLink[i].addEventListener('click', () => {
+            if (window.matchMedia("(max-width: 768px)").matches) {
                 toggleClass(menuToggle, 'menu-toggle--active-menu-toggle');
                 toggleClass(menu, 'main-header__menu--active-menu-toggle');
                 toggleClass(body, 'body--stop-scrolling');
-            });
+            }
         });
     }
 })();
